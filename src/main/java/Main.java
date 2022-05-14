@@ -5,7 +5,10 @@ public class Main {
     long amount = 1000_60;
     boolean registered = true;
 
-    service.calculate(amount, registered);
+    long actual = service.calculate(amount, registered);
+    int expected = 30;
+
+    System.out.println("OP: " + expected + ", ФР: " + actual);
   }
 }
 
